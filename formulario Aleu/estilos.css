@@ -10,6 +10,7 @@ padding: 0;
 box-sizing: border-box;
 }
 
+/*Globals */
 body {
     font-family: "Roboto";
     background: #4568dc; 
@@ -26,38 +27,7 @@ h1{
     font-weight: 700;
 }
 
-form {
-    background:  white;
-    padding: 40px 0;
-    box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
-    border-radius: 10px;
-}
 
-.form{
-    width: 100%;
-    margin: auto ;
-}
-
-form .myfield {
-    position: relative;
-    margin: 45px;
-}
-
-input{
-    background: none;
-    color: #c6c6c6;
-    font-size: 18px;
-    padding: 10px 10px 10px 5px;
-    display: block;
-    width: 100%;
-    border: none;
-    border-bottom: 1px solid var(--colorTextos);
-}
-
-input:focus{
-    outline:  none;
-    color: #5e5d5d;
-}
 
 label{
     color: var(--colorTextos);
@@ -69,6 +39,11 @@ label{
     pointer-events: none;
 }
 
+input:focus{
+    outline:  none;
+    color: #5e5d5d;
+}
+
 input:focus~label,
 input:valid~label{
     top: -14px;
@@ -76,9 +51,30 @@ input:valid~label{
     color: #2196f3;
 }
 
-.barra{
+.myfield {
     position: relative;
+    margin: 45px;
+}
+.myinput{
+    background: none;
+    color: #c6c6c6;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
     display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--colorTextos);
+}
+
+
+.form{
+    width: 100%;
+    margin: auto;
+}
+
+.barra{
+    display: block;
+    position: relative;
     width: 100%;
 }
 
@@ -87,13 +83,62 @@ input:valid~label{
     height: 2px;
     width: 0%;
     bottom: 0;
-    position: relative;
+    position: absolute;
+    background: linear-gradient(to right, #b06ab3, #4568dc); 
+    left: 0;
 }
-/* input:focus~.barra::before{
 
-} */
+input:focus~.barra::before {
+    width: 100%;
+} 
 
+/*Controls inside the main form */
+.mainform {
+    background:white;
+    padding: 40px 15px;
+    box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
 
+.mainform button {
+    font-family: "Roboto";
+    background: #4568dc; 
+    background:  -webkit-linear-gradient(to right, #B06AB3, #4568DC);
+    background: linear-gradient(to right, #b06ab3, #4568dc); 
+    border: none;
+    border-radius: 10px;
+    display: block;
+    width: 80%;
+    color: white;
+    height: 40px;
+    margin: 10px auto;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.mainform p {
+    height: 40px;
+    font: size 20px;
+    text-align: center;
+}
+
+.mainform a {
+    color: blue;
+    text-decoration: underline;
+    font-size: 18px;
+    line-height: 18px;
+} 
+.mainform a:hover {
+    color: rgb(214, 98, 199);
+    text-decoration: underline;
+    font-weight: bolder;
+    font-family: "Roboto";
+}
+
+#terminos 
+{
+    margin: auto;
+}
 
 /*.grupo {
      text-align: center;
@@ -113,8 +158,3 @@ input:valid~label{
      row-gap: 1rem; 
 }
 
-.bottom {
-    border-radius: 2px;
-    width: auto;
-    height: auto;
-}*/
