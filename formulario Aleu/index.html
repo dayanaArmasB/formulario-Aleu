@@ -8,25 +8,30 @@
     <title>Document</title>
 </head>
 <body>
-<form class = "mainform" action="" method="post" id="form">
-<div class="form">
-    <h1>Registro</h1>
-    <div class="myfield">
-        <input id="name"class="myinput" type="text" required><span class="barra"></span>
-        <label for="" class="mylabelname">Nombre</label>
+<form id="form_principal" class = "mainform">
+    <div class="form">
+        <h1>Registro</h1>
+        <div class="myfield">
+            <!-- <input id="Name" class="myinput" type="text" required><span class="barra"></span> -->
+            <input id="Name" class="myinput" type="text"><span class="barra"></span>
+            <label for="" class="mylabelname">Nombres</label>
+        </div>
+        <div class="myfield">
+            <!-- <input id="Lastname"class="myinput" required><span class="barra"></span> -->
+            <input id="Lastname"class="myinput"><span class="barra"></span>
+            <label for="" class="mylabelLastname">Apellidos</label>
+        </div>
+        <div class="myfield">
+            <!-- <input id="Email" class="myinput" required><span class="barra"></span> -->
+            <input id="Email" class="myinput"><span class="barra"></span>
+            <label for="" class="mylabelEmail">Correo</label>
+        </div>  
+        <input type="checkbox" id="terminos"> Estoy de acuerdo con <a id="myterms" href="#">Terminos y condiciones</a>
+        <!-- <p> Estoy de acuerdo con <a href="#">Terminos y condiciones</a></p> -->
+        <Button type="submit">Registrarse</Button>
     </div>
-    <div class="myfield">
-        <input id="Lastname"class="myinput" required><span class="barra"></span>
-        <label for="" class="mylabelLastname"> Apellido </label>
-    </div>
-    <div class="myfield">
-        <input id="Email" class="myinput" required><span class="barra"></span>
-        <label for="" class="mylabelEmail"> Correo </label>
-    </div>  
-    <input type="checkbox" id="terminos"> Estoy de acuerdo con <a id="myterms" href="#">Terminos y condiciones</a>
-    <!-- <p> Estoy de acuerdo con <a href="#">Terminos y condiciones</a></p> -->
-    <Button type="submit">Registrarse</Button>
-</div>
 </form>
 </body>
 </html>
+
+<script src="js/miarchivo.js"></script>
